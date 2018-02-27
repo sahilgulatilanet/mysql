@@ -1,0 +1,8 @@
+BEGIN
+	IF char_length(New.mob)<10 THEN
+    	SET new.mob=0;
+	END IF;
+    IF new.address IS NULL THEN
+    	SET new.address='surat';
+    END IF;
+END

@@ -1,0 +1,5 @@
+BEGIN
+DECLARE cnt int;
+SET cnt=(SELECT COUNT(*) from tbl);
+RETURN cnt;
+END

@@ -1,0 +1,11 @@
+//inner join
+SELECT dnm,enm,emob FROM emp e INNER JOIN dept d WHERE e.did=d.did
+SELECT dnm,enm,emob FROM emp e,dept d WHERE e.did=d.did
+SELECT dnm,enm,emob,works,status FROM emp e,dept d,work w WHERE e.did=d.did and w.eid=e.eid
+
+//left join
+SELECT dnm,enm,emob FROM dept d LEFT JOIN emp e ON e.did=d.did
+
+//right join
+SELECT dnm,enm,emob FROM dept d RIGHT JOIN emp e ON e.did=d.did
+
